@@ -1,0 +1,18 @@
+services:
+  latex:
+    container_name: latex-reinforce
+    build:
+      context: .
+      dockerfile: .devcontainer/Dockerfile
+    volumes:
+      - .:/workspaces
+
+    # コンテナ内での作業ディレクトリ
+    working_dir: /workspaces
+
+    # devcontainer イメージの既定ユーザ
+    user: "vscode"
+
+    tty: true
+    command: /bin/bash -l
+

@@ -1,0 +1,25 @@
+{
+  "name": "LaTeX Report DevContainer",
+
+  // ここで compose.yaml を使う
+  "dockerComposeFile": [
+    "../compose.yaml"
+  ],
+  "service": "latex",
+
+  // コンテナ内のワークスペースパス
+  // フォルダ名がそのままworkspace配下にマウントされる
+  "workspaceFolder": "/workspaces/",
+
+  // devcontainers/base に入っているユーザ
+  "remoteUser": "vscode",
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "James-Yu.latex-workshop"
+      ]
+    }
+  }
+}
+

@@ -1,0 +1,31 @@
+{
+  "latex-workshop.latex.recipe.default": "pLaTeX",
+  "latex-workshop.latex.recipes": [
+    {
+      "name": "pLaTeX",
+      "tools": [
+        "platex",
+        "platex",
+        "dvipdfmx"
+      ]
+    }
+  ],
+  "latex-workshop.latex.tools": [
+    {
+      "name": "platex",
+      "command": "platex",
+      "args": [
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "%DOC%"
+      ]
+    },
+    {
+      "name": "dvipdfmx",
+      "command": "dvipdfmx",
+      "args": [
+        "%DOCFILE%"
+      ]
+    }
+  ]
+}

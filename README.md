@@ -10,7 +10,8 @@
 ## 実行方法
 1. このリポジトリをcloneする
 2. VSCodeを開き、上の検索バーから`> Dev Containers: Rebuild and Reopen in Container`を実行する
-  <img width="582" height="42" alt="スクリーンショット 2025-12-04 17 55 16" src="https://github.com/user-attachments/assets/7e1ede5e-c58d-4cc3-aeee-b312286af286" />
+    <img width="582" height="42" alt="スクリーンショット 2025-12-04 17 55 16" src="https://github.com/user-attachments/assets/7e1ede5e-c58d-4cc3-aeee-b312286af286" />  
+
 3. `report.tex`を仕上げる
 4. PDFを生成する
   - `make`コマンドを実行するだけで生成される。
